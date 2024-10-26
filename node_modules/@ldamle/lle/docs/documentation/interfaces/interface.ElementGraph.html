@@ -1,0 +1,259 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ElementGraph | ldamle - v1.0.18</title><meta name="description" content="Documentation for ldamle"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #bac3ff;
+    --md-sys-color-on-primary: #162778;
+    --md-sys-color-primary-container: #303f90;
+    --md-sys-color-on-primary-container: #dee0ff;
+    --md-sys-color-secondary: #c3c5dd;
+    --md-sys-color-on-secondary: #2c2f42;
+    --md-sys-color-secondary-container: #434659;
+    --md-sys-color-on-secondary-container: #dfe1f9;
+    --md-sys-color-tertiary: #e5bad8;
+    --md-sys-color-on-tertiary: #44263e;
+    --md-sys-color-tertiary-container: #5d3c55;
+    --md-sys-color-on-tertiary-container: #ffd7f2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1b1b1f;
+    --md-sys-color-on-background: #e4e1e6;
+    --md-sys-color-surface: #1b1b1f;
+    --md-sys-color-on-surface: #e4e1e6;
+    --md-sys-color-surface-variant: #46464f;
+    --md-sys-color-on-surface-variant: #c6c5d0;
+    --md-sys-color-outline: #90909a;
+    --md-sys-color-outline-variant: #46464f;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e4e1e6;
+    --md-sys-color-inverse-on-surface: #303034;
+    --md-sys-color-inverse-primary: #4958a9;
+    --md-sys-color-surface-dim: #131316;
+    --md-sys-color-surface-bright: #39393c;
+    --md-sys-color-surface-container-lowest: #0e0e11;
+    --md-sys-color-surface-container-low: #1b1b1f;
+    --md-sys-color-surface-container: #1f1f23;
+    --md-sys-color-surface-container-high: #2a2a2d;
+    --md-sys-color-surface-container-highest: #353438
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #bac3ff;
+  --md-sys-color-on-primary: #162778;
+  --md-sys-color-primary-container: #303f90;
+  --md-sys-color-on-primary-container: #dee0ff;
+  --md-sys-color-secondary: #c3c5dd;
+  --md-sys-color-on-secondary: #2c2f42;
+  --md-sys-color-secondary-container: #434659;
+  --md-sys-color-on-secondary-container: #dfe1f9;
+  --md-sys-color-tertiary: #e5bad8;
+  --md-sys-color-on-tertiary: #44263e;
+  --md-sys-color-tertiary-container: #5d3c55;
+  --md-sys-color-on-tertiary-container: #ffd7f2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1b1b1f;
+  --md-sys-color-on-background: #e4e1e6;
+  --md-sys-color-surface: #1b1b1f;
+  --md-sys-color-on-surface: #e4e1e6;
+  --md-sys-color-surface-variant: #46464f;
+  --md-sys-color-on-surface-variant: #c6c5d0;
+  --md-sys-color-outline: #90909a;
+  --md-sys-color-outline-variant: #46464f;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e4e1e6;
+  --md-sys-color-inverse-on-surface: #303034;
+  --md-sys-color-inverse-primary: #4958a9;
+  --md-sys-color-surface-dim: #131316;
+  --md-sys-color-surface-bright: #39393c;
+  --md-sys-color-surface-container-lowest: #0e0e11;
+  --md-sys-color-surface-container-low: #1b1b1f;
+  --md-sys-color-surface-container: #1f1f23;
+  --md-sys-color-surface-container-high: #2a2a2d;
+  --md-sys-color-surface-container-highest: #353438
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #4958a9;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #dee0ff;
+    --md-sys-color-on-primary-container: #00115a;
+    --md-sys-color-secondary: #5b5d72;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #dfe1f9;
+    --md-sys-color-on-secondary-container: #171a2c;
+    --md-sys-color-tertiary: #76546d;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #ffd7f2;
+    --md-sys-color-on-tertiary-container: #2d1228;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fefbff;
+    --md-sys-color-on-background: #1b1b1f;
+    --md-sys-color-surface: #fefbff;
+    --md-sys-color-on-surface: #1b1b1f;
+    --md-sys-color-surface-variant: #e3e1ec;
+    --md-sys-color-on-surface-variant: #46464f;
+    --md-sys-color-outline: #767680;
+    --md-sys-color-outline-variant: #c6c5d0;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #303034;
+    --md-sys-color-inverse-on-surface: #f3f0f4;
+    --md-sys-color-inverse-primary: #bac3ff;
+    --md-sys-color-surface-dim: #dcd9de;
+    --md-sys-color-surface-bright: #fbf8fd;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #f6f2f7;
+    --md-sys-color-surface-container: #f0edf1;
+    --md-sys-color-surface-container-high: #eae7ec;
+    --md-sys-color-surface-container-highest: #e4e1e6
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #4958a9;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #dee0ff;
+  --md-sys-color-on-primary-container: #00115a;
+  --md-sys-color-secondary: #5b5d72;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #dfe1f9;
+  --md-sys-color-on-secondary-container: #171a2c;
+  --md-sys-color-tertiary: #76546d;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #ffd7f2;
+  --md-sys-color-on-tertiary-container: #2d1228;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fefbff;
+  --md-sys-color-on-background: #1b1b1f;
+  --md-sys-color-surface: #fefbff;
+  --md-sys-color-on-surface: #1b1b1f;
+  --md-sys-color-surface-variant: #e3e1ec;
+  --md-sys-color-on-surface-variant: #46464f;
+  --md-sys-color-outline: #767680;
+  --md-sys-color-outline-variant: #c6c5d0;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #303034;
+  --md-sys-color-inverse-on-surface: #f3f0f4;
+  --md-sys-color-inverse-primary: #bac3ff;
+  --md-sys-color-surface-dim: #dcd9de;
+  --md-sys-color-surface-bright: #fbf8fd;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f6f2f7;
+  --md-sys-color-surface-container: #f0edf1;
+  --md-sys-color-surface-container-high: #eae7ec;
+  --md-sys-color-surface-container-highest: #e4e1e6
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">ldamle - v1.0.18</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../index.html">ldamle</a></li><li><a href="../modules/interface.html">interface</a></li><li><a href="interface.ElementGraph.html">ElementGraph</a></li></ul><h1>Interface ElementGraph</h1></div><section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography"><p>Интерфейс для создания и управления графом элементов.
+Обеспечивает методы для генерации графа, поиска элементов, получения информации о подключённых и неподключённых соединениях,
+а также выполнения обхода графа различными способами.</p>
+</div><div class="tsd-comment tsd-typography"></div></section><div class="tsd-signature"><span class="tsd-signature-keyword">interface </span><span class="tsd-kind-interface">ElementGraph</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><a class="tsd-kind-property" href="interface.ElementGraph.html#tree">tree</a><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#findElement.findElement-1">findElement</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">pointElement</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#genGraph.genGraph-1">genGraph</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">pointElement</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getAllElementsBFS.getAllElementsBFS-1">getAllElementsBFS</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getAllElementsDFS.getAllElementsDFS-1">getAllElementsDFS</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getAllNodeBFS.getAllNodeBFS-1">getAllNodeBFS</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getAllNodeDFS.getAllNodeDFS-1">getAllNodeDFS</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getConnectionsNode.getConnectionsNode-1">getConnectionsNode</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Connection.html" class="tsd-signature-type tsd-kind-interface">Connection</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getGenerators.getGenerators-1">getGenerators</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getInputs.getInputs-1">getInputs</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.SourcesArray.html" class="tsd-signature-type tsd-kind-type-alias">SourcesArray</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getOutputs.getOutputs-1">getOutputs</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Connection.html" class="tsd-signature-type tsd-kind-interface">Connection</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-call-signature" href="interface.ElementGraph.html#getSetNodeDFS.getSetNodeDFS-1">getSetNodeDFS</a><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div><section class="tsd-panel"><h4>Implemented by</h4><ul class="tsd-hierarchy"><li><a href="../classes/controller_elementGraph.ElementGraph.html" class="tsd-signature-type tsd-kind-class">ElementGraph</a></li></ul></section><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L461">interface.ts:461</a></li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex="0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-chevronSmall"></use></svg> Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">Properties</h3><div class="tsd-index-list"><a href="interface.ElementGraph.html#tree" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>tree</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Methods</h3><div class="tsd-index-list"><a href="interface.ElementGraph.html#findElement" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>find<wbr/>Element</span></a>
+<a href="interface.ElementGraph.html#genGraph" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>gen<wbr/>Graph</span></a>
+<a href="interface.ElementGraph.html#getAllElementsBFS" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>ElementsBFS</span></a>
+<a href="interface.ElementGraph.html#getAllElementsDFS" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>ElementsDFS</span></a>
+<a href="interface.ElementGraph.html#getAllNodeBFS" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>NodeBFS</span></a>
+<a href="interface.ElementGraph.html#getAllNodeDFS" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>NodeDFS</span></a>
+<a href="interface.ElementGraph.html#getConnectionsNode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Connections<wbr/>Node</span></a>
+<a href="interface.ElementGraph.html#getGenerators" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Generators</span></a>
+<a href="interface.ElementGraph.html#getInputs" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Inputs</span></a>
+<a href="interface.ElementGraph.html#getOutputs" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Outputs</span></a>
+<a href="interface.ElementGraph.html#getSetNodeDFS" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Set<wbr/>NodeDFS</span></a>
+</div></section></div></details></section></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg> Properties</h2></summary><section><section class="tsd-panel tsd-member"><a id="tree" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>tree</span><a href="#tree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">tree</span><span class="tsd-signature-symbol">:</span> <a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span></div><div class="tsd-comment tsd-typography"><ul>
+<li>Граф элементов, представленный в виде массива узлов графа.
+Каждый узел описывает элемент и его связи в графе.</li>
+</ul>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L467">interface.ts:467</a></li></ul></aside></section></section></details><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg> Methods</h2></summary><section><section class="tsd-panel tsd-member"><a id="findElement" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>find<wbr/>Element</span><a href="#findElement" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="findElement.findElement-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">find<wbr/>Element</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">pointElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><a href="#findElement.findElement-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Находит элемент в графе.
+Возвращает узел графа, связанный с указанным элементом, или <code>false</code>, если элемент не найден.</li>
+</ul>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">pointElement</span>: <a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a></span><div class="tsd-comment tsd-typography"><p>Элемент, который нужно найти в графе.</p>
+</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a></h4><p>Узел графа или <code>false</code>, если элемент не найден.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L485">interface.ts:485</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="genGraph" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>gen<wbr/>Graph</span><a href="#genGraph" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="genGraph.genGraph-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">gen<wbr/>Graph</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">pointElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#genGraph.genGraph-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Генерирует граф элементов начиная с указанного элемента.</li>
+</ul>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">pointElement</span>: <a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a></span><div class="tsd-comment tsd-typography"><p>Начальный элемент для генерации графа.</p>
+</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L475">interface.ts:475</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getAllElementsBFS" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>ElementsBFS</span><a href="#getAllElementsBFS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getAllElementsBFS.getAllElementsBFS-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>All<wbr/>ElementsBFS</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span><a href="#getAllElementsBFS.getAllElementsBFS-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает все элементы графа, используя алгоритм обхода в ширину (BFS).
+Элементы возвращаются в порядке обхода.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив элементов, отсортированный по результатам обхода в ширину.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L537">interface.ts:537</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getAllElementsDFS" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>ElementsDFS</span><a href="#getAllElementsDFS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getAllElementsDFS.getAllElementsDFS-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>All<wbr/>ElementsDFS</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span><a href="#getAllElementsDFS.getAllElementsDFS-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает все элементы графа, используя алгоритм обхода в глубину (DFS).
+Элементы возвращаются в порядке обхода.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив элементов, отсортированный по результатам обхода в глубину.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L528">interface.ts:528</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getAllNodeBFS" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>NodeBFS</span><a href="#getAllNodeBFS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getAllNodeBFS.getAllNodeBFS-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>All<wbr/>NodeBFS</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><a href="#getAllNodeBFS.getAllNodeBFS-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает узлы графа с уникальными элементами, используя алгоритм обхода в ширину (BFS).
+Алгоритм устроен не совсем так как у обычного дерева: если все элементы,
+к которым подключен текущий анализируемый элемент уже есть в массиве то
+элемент подключается. Это позволяет избежать при симуляциях неизвестных значений
+и симулировать все элементы по порядку.
+Узлы содержат элементы и их соединения.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив узлов графа, отсортированный по результатам обхода в ширину.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L559">interface.ts:559</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getAllNodeDFS" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>NodeDFS</span><a href="#getAllNodeDFS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getAllNodeDFS.getAllNodeDFS-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>All<wbr/>NodeDFS</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><a href="#getAllNodeDFS.getAllNodeDFS-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает все узлы графа, используя алгоритм обхода в глубину (DFS).
+Узлы содержат элементы и их соединения.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив узлов графа, отсортированный по результатам обхода в глубину.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L546">interface.ts:546</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getConnectionsNode" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Connections<wbr/>Node</span><a href="#getConnectionsNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getConnectionsNode.getConnectionsNode-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Connections<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Connection.html" class="tsd-signature-type tsd-kind-interface">Connection</a><span class="tsd-signature-symbol">[]</span><a href="#getConnectionsNode.getConnectionsNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Находит все соединения, к которым подключен данный узел</li>
+</ul>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">node</span>: <a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a></span><div class="tsd-comment tsd-typography"><p>Данный узел</p>
+</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <a href="interface.Connection.html" class="tsd-signature-type tsd-kind-interface">Connection</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив соединений</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L494">interface.ts:494</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getGenerators" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Generators</span><a href="#getGenerators" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getGenerators.getGenerators-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Generators</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span><a href="#getGenerators.getGenerators-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает массив генераторов, которые присутствуют в графе.
+Генераторы — это элементы, создающие сигнал (например, генераторы меандра).</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="interface.Element.html" class="tsd-signature-type tsd-kind-interface">Element</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив элементов-генераторов.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L519">interface.ts:519</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getInputs" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Inputs</span><a href="#getInputs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getInputs.getInputs-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Inputs</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.SourcesArray.html" class="tsd-signature-type tsd-kind-type-alias">SourcesArray</a><a href="#getInputs.getInputs-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает массив входных соединений, которые ни к чему не подключены.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="../types/types.SourcesArray.html" class="tsd-signature-type tsd-kind-type-alias">SourcesArray</a></h4><p>Массив незадействованных входных соединений.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L510">interface.ts:510</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getOutputs" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Outputs</span><a href="#getOutputs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getOutputs.getOutputs-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Outputs</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interface.Connection.html" class="tsd-signature-type tsd-kind-interface">Connection</a><span class="tsd-signature-symbol">[]</span><a href="#getOutputs.getOutputs-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает массив выходных соединений, которые ни к чему не подключены.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="interface.Connection.html" class="tsd-signature-type tsd-kind-interface">Connection</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив незадействованных выходных соединений.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L502">interface.ts:502</a></li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getSetNodeDFS" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Set<wbr/>NodeDFS</span><a href="#getSetNodeDFS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getSetNodeDFS.getSetNodeDFS-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Set<wbr/>NodeDFS</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span><a href="#getSetNodeDFS.getSetNodeDFS-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-comment tsd-typography"><ul>
+<li>Возвращает уникальные узлы графа, используя алгоритм обхода в глубину (DFS).
+Уникальные узлы — это узлы, которые встречаются в графе только один раз.</li>
+</ul>
+</div><h4 class="tsd-returns-title">Returns <a href="../types/types.ElementGraphNode.html" class="tsd-signature-type tsd-kind-type-alias">ElementGraphNode</a><span class="tsd-signature-symbol">[]</span></h4><p>Массив уникальных узлов графа, отсортированных по результатам обхода в глубину.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/pluttan/lle/blob/d6532bbba2bf5b4de737f9b43a0d45a107863006/src/interface.ts#L568">interface.ts:568</a></li></ul></aside></li></ul></section></section></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="tsd-otp-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary><div><a href="#tree" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>tree</span></a></div></details><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="tsd-otp-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Methods</summary><div><a href="#findElement" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>find<wbr/>Element</span></a><a href="#genGraph" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>gen<wbr/>Graph</span></a><a href="#getAllElementsBFS" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>ElementsBFS</span></a><a href="#getAllElementsDFS" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>ElementsDFS</span></a><a href="#getAllNodeBFS" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>NodeBFS</span></a><a href="#getAllNodeDFS" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>All<wbr/>NodeDFS</span></a><a href="#getConnectionsNode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Connections<wbr/>Node</span></a><a href="#getGenerators" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Generators</span></a><a href="#getInputs" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Inputs</span></a><a href="#getOutputs" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Outputs</span></a><a href="#getSetNodeDFS" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Set<wbr/>NodeDFS</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>ldamle - v1.0.18</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div>
+        <footer style="text-align: center;overflow: hidden; padding:0;">
+            <p style="width: 100%; display: flex; margin-top: 20px; justify-content: center; align-items: center; color: #aaa;">
+                <a href="https://github.com/pluttan/lle" style="color: #89b4fa; opacity:0.9; margin-right: 20px; margin-left: -20px;">Library for drawing and modeling logical elements</a> 
+                <span style="margin: 0 20px;">Created by <a href="https://github.com/pluttan/" style="color: #89b4fa;opacity:0.9;">pluttan</a></span> 
+                <span style="margin: 0 20px;"><a href="https://github.com/pluttan/lle/blob/main/LICENSE" style="color: #89b4fa;opacity:0.9;">MIT LICENSE</a></span> 
+                <span style="margin: 0 20px;">2024</span>
+            </p>
+        </footer>
+        <div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>

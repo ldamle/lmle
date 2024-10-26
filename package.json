@@ -1,0 +1,26 @@
+{
+  "name": "@ldamle/lmle",
+  "version": "1.0.2",
+  "main": "dist/lmle.js",
+  "types": "dist/types/model.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -r dist/ && webpack --config webpack.config.js && tsc -p ./tsconfigd.json"
+  },
+  "author": "pluttan",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@ldamle/lle": "^1.0.45",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}

@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+  echo "Ошибка: требуется указать целевую папку."
+  exit 1
+fi
+target_dir="$1"
+jest --config ./test/jest."$target_dir".config.js
+cp ./test/coverage/theme/*.css ./test/coverage/"$target_dir"

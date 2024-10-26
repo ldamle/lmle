@@ -1,0 +1,125 @@
+.pln {
+	color: #cad3f5; /* Text */
+}
+
+@media screen {
+	.str {
+		color: #a6da95; /* Green */
+	}
+
+	.kwd {
+		color: #8aadf4; /* Blue */
+	}
+
+	.com {
+		color: #ed8796; /* Red */
+	}
+
+	.typ {
+		color: #c6a0f6; /* Mauve */
+	}
+
+	.lit {
+		color: #f5a97f; /* Peach */
+	}
+
+	.clo,
+	.opn,
+	.pun {
+		color: #eed49f; /* Yellow */
+	}
+
+	.tag {
+		color: #8aadf4; /* Blue */
+	}
+
+	.atn {
+		color: #b8c0e0; /* Subtext 1 */
+	}
+
+	.atv {
+		color: #a6da95; /* Green */
+	}
+
+	.dec,
+	.var {
+		color: #a5adcb; /* Subtext 0 */
+	}
+
+	.fun {
+		color: #f5bde6; /* Pink */
+	}
+}
+
+@media print, projection {
+	.str {
+		color: #a6da95; /* Green */
+	}
+
+	.kwd {
+		color: #8aadf4; /* Blue */
+		font-weight: bold;
+	}
+
+	.com {
+		color: #ed8796; /* Red */
+		font-style: italic;
+	}
+
+	.typ {
+		color: #c6a0f6; /* Mauve */
+		font-weight: bold;
+	}
+
+	.lit {
+		color: #f5a97f; /* Peach */
+	}
+
+	.clo,
+	.opn,
+	.pun {
+		color: #eed49f; /* Yellow */
+	}
+
+	.tag {
+		color: #8aadf4; /* Blue */
+		font-weight: bold;
+	}
+
+	.atn {
+		color: #b8c0e0; /* Subtext 1 */
+	}
+
+	.atv {
+		color: #a6da95; /* Green */
+	}
+}
+
+pre.prettyprint {
+	padding: 2px;
+	border: 1px solid #8087a2; /* Overlay 1 */
+}
+
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+	list-style-type: none;
+}
+
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+	background: #5b6078; /* Surface 2 */
+}

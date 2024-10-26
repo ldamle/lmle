@@ -1,0 +1,3 @@
+#!/bin/bash
+
+find . -name node_modules -prune -o \( -name "*.tsx" -o -name "*.ts" ! -name "*.d.ts" \) -print | xargs wc -l
